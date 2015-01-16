@@ -43,24 +43,39 @@
 				$('#cameraNames').val(camera);
 			}
 		</script> 
+    <meta charset="UTF-8">
+	<style type="text/css">
+	body {
+	background-color: #FFE5B9;
+}
+    </style>
 	</head>
 	<body>
-		<div style="width:330px;float:left;">
-			<div id="webcam">
-			</div>
+	<div style="width:330px;float:left;">
+		  <div align="center"><img src = "img/pp.png" width="70%"/>
+	      </div>
+		  <div id="webcam">
+	      </div>
 			<div style="margin:5px;">
 				
-				<select id="cameraNames" size="1" onChange="changeCamera()" style="width:245px;font-size:10px;height:25px;">
-				</select>
-			</div>
-		</div>
-		<div style="width:135px;float:left;">
+				<div align="center">
+				  <table width="114" height="60" position: absolute; border="0">
+				    <tr>
+				      <td width="104"><img src="img/left.png" style="position: absolute; width: 50px; height: auto; left: 117px; top: 148px;"onClick="img/1.png"/></td>
+				      <td width="124"><img src="img/right.png" style="position: absolute; width: 50px; height: auto; left: 173px; top: 147px;"/></td>
+			        </tr>
+			      </table>
+				  <select name="cameraNames" size="1" id="cameraNames" style="width:245px;font-size:10px;height:25px;" onChange="changeCamera()">
+			      </select>
+		      </div>
+	      </div>
+	</div>
+		<span style="width:330px;float:left;"><span style="margin:5px;">
+        <img src="img/2.png" height="212" id="image" style="width: 200px; height: 184px; position: absolute; top: 241px; left: 80px;"/>
+        </span></span>
+		<div style="width:80px;float:left;">
 			
-			<p><button class="btn btn-small" id="btn2" onclick="base64_toimage()">Say Cheese</button></p>
-		</div>
-		<div style="width:200px;float:left;">
-			
-			<p><img id="image" src="img/1.png" style="width:200px;height:153px;position:absolute;top:268px;left:142px;"/></p>
+		  <p><button class="btn btn-small" id="btn2" style="position: absolute; left: 247px; top: 155px;" onclick="base64_toimage()">Say Cheese</button></p>
 	</div>
 	</body>
 </html>
